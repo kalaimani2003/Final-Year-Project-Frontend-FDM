@@ -1,0 +1,63 @@
+.whole {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 80%;
+  max-width: 1000px; /* Adjust width as per your requirement */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures responsiveness */
+  justify-content: space-around;
+  gap: 40px; /* Adds gap between cards */
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px; /* Adjust width of each card */
+  transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card img {
+  width: 100%; /* Ensures the image takes full width of the card */
+  height: 200px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures image doesn't stretch */
+  border-radius: 12px;
+}
+
+.card p {
+  margin: 15px 0;
+  font-size: 16px;
+  color: #444;
+}
+
+.edit-button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #2e8b57;
+  color: white;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.edit-button:hover {
+  background-color: white;
+  color: #2e8b57;
+  border: 1px solid #2e8b57;
+}
+
+.edit-button svg {
+  margin-left: 5px;
+}

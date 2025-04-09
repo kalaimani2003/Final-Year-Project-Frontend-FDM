@@ -1,0 +1,112 @@
+/* userpanel.css */
+
+.wrap-body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar-user {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    position: sticky;
+    top: 0;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-links1 {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links1 li {
+    margin: 0 15px;
+  }
+  
+  .nav-links1 li a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .cardd-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .carddd {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .carddd:hover {
+    transform: translateY(-10px);
+  }
+  
+  .carddd img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image is contained within the dimensions */
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .hp {
+    padding: 15px;
+  }
+  
+  .hp h2 {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .phh {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .ph {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .b {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .b:hover {
+    background-color: #e64a19;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+  }
+  

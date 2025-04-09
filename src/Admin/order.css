@@ -1,0 +1,85 @@
+.whole-wrap {
+    padding: 20px;
+  }
+  
+  .wrap {
+    background-color: #f4f4f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  .status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .status.pending {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .status.delivered {
+    background-color: green;
+    color: white;
+  }
+  
+  .status.in-transit {
+    background-color: blue;
+    color: white;
+  }
+  
+  input[type="checkbox"] {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Styling for the "Completed" column */
+  table td[data-label="Completed"] {
+    text-align: center;
+  }
+  
+  table th {
+    text-align: left;
+  }
+  
+  table td {
+    vertical-align: middle;
+  }
+  .status.delivered {
+    color: green;
+  }
+  .loading {
+    color: blue;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  

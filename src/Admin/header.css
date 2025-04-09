@@ -1,0 +1,26 @@
+.nav{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    
+}
+
+
+.flex{
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color:white;
+    flex-wrap: wrap;
+    width: 100vw;
+
+}
+.a
+    {
+        color: white;
+        text-decoration: none;
+        /* border-radius: 4px; */
+        transition: background-color 0.3s;
+    }

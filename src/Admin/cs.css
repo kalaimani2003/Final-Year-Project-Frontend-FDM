@@ -1,0 +1,8 @@
+.dbmain{
+    display: flex;
+    
+    background-image: url('../assets/foodblack3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
