@@ -45,7 +45,8 @@
   padding: 10px 20px;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: #2e8b57;
+  background-color: rgb(255, 101, 6);
+
   color: white;
   border-radius: 5px;
   display: inline-flex;
@@ -54,8 +55,9 @@
 
 .edit-button:hover {
   background-color: white;
-  color: #2e8b57;
-  border: 1px solid #2e8b57;
+  border: 1px solid rgb(255, 101, 6);
+  color: rgb(255, 101, 6);
+
 }
 
 .edit-button svg {

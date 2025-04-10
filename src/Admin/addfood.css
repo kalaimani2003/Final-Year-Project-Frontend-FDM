@@ -28,7 +28,7 @@
   .modal button {
     margin-top: 15px;
     padding: 8px 16px;
-    background-color: #4caf50;
+    background-color: rgb(255, 101, 6);
     color: white;
     border: none;
     border-radius: 4px;
@@ -36,7 +36,7 @@
   }
   
   .modal button:hover {
-    background-color: #45a049;
+    background-color: rgb(226, 86, 5);
   }
   
 
@@ -99,7 +99,7 @@
 }
 
 .butn {
-    background-color: black;
+    background-color: rgb(255, 101, 6);
     color:white;
     padding: 12px 20px;
     /* border: none; */
@@ -110,7 +110,9 @@
 }
 
 .butn:hover {
-    background-color: rgba(0, 0, 0, 0.861);
+    /* background-color: rgba(0, 0, 0, 0.861);   */
+    background-color: rgb(226, 86, 5);
+
     color: white;
 }
 

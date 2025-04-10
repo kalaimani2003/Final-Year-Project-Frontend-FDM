@@ -28,7 +28,6 @@ function Routerr() {
           <Route path="/editfood" element={<Editfood />} />
           <Route path="/edit/:id" element={<Editfoodd />} />
           <Route path="/order-list" element={<OrderList />} />
-
         </Routes>
       </div>
     </>

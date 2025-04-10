@@ -26,7 +26,8 @@
 }
 
 .table-header {
-    background-color:black;
+    /* background-color:black; */
+    background-color: rgb(255, 101, 6);
     color: white;
     font-weight: 500;
     text-align: left;
@@ -59,7 +60,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ef5350;
+    background: rgb(231, 3, 3);
 }
 
 .delete-icon {
