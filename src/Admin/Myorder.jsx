@@ -31,7 +31,7 @@ function Myorder() {
 
   return (
     <>
-     <div className="wrap-body">
+      <div className="wrap-body">
         <nav className="navbar-user">
           <div className="navbar-container">
             <div className="logo">DELICIOUS FOOD</div>
@@ -43,7 +43,7 @@ function Myorder() {
             </ul>
           </div>
         </nav>
-        </div>
+      </div>
       <div className="dy">
         <div className="cntainer">
           <h1 className="m">My Orders</h1>
@@ -67,9 +67,8 @@ function Myorder() {
                     <td data-label="Total">₹{order.totalAmount}</td>
                     <td data-label="Status">
                       <span
-                        className={`status status-${
-                          order.status.toLowerCase()
-                        }`}
+                        className={`status status-${order.status.toLowerCase()
+                          }`}
                       >
                         {order.status}
                       </span>

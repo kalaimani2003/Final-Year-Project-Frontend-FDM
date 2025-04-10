@@ -1,7 +1,5 @@
 .sidebar {
     width: 273px;
-    /* background-color:black; */
-    /* background-color: rgb(255, 101, 6); */
     background-color: #4C4743;
     color: white;
     padding: 1rem 0rem;
@@ -37,9 +35,10 @@
     text-decoration: none;
     padding: 1.5rem;
     /* border-radius: 4px; */
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
     /* background-color: aquamarine; */
-    width: 100%;
+    /* width: 100%; */
+    width: 273px;
 }
 
 .nav-links :hover {

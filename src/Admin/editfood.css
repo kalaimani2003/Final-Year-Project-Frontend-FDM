@@ -2,15 +2,23 @@
   font-family: Arial, sans-serif;
   margin: 0 auto;
   margin-top: 50px;
-  width: 80%;
-  max-width: 1000px; /* Adjust width as per your requirement */
+  width: 75%;
+  /* max-width: 1000px; */
+  /* border: 3px solid white; */
+  /* Adjust width as per your requirement */
+  padding: 20px;
+
 }
 
 .card-container {
   display: flex;
-  flex-wrap: wrap; /* Ensures responsiveness */
-  justify-content: space-around;
-  gap: 40px; /* Adds gap between cards */
+  flex-wrap: wrap;
+  /* border: 2px solid white;  */
+  /* Ensures responsiveness */
+  /* justify-content: space-around; */
+  gap: 20px;
+  /* padding: 20px; */
+  padding: 0px;
 }
 
 .card {
@@ -19,18 +27,24 @@
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 250px; /* Adjust width of each card */
-  transition: transform 0.3s ease; /* Animation for hover effect */
+  width: 250px;
+  /* Adjust width of each card */
+  transition: transform 0.3s ease;
+  /* Animation for hover effect */
 }
 
 .card:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
+  transform: translateY(-5px);
+  /* Slight lift on hover */
 }
 
 .card img {
-  width: 100%; /* Ensures the image takes full width of the card */
-  height: 200px; /* Adjust height as needed */
-  object-fit: cover; /* Ensures image doesn't stretch */
+  width: 100%;
+  /* Ensures the image takes full width of the card */
+  height: 200px;
+  /* Adjust height as needed */
+  object-fit: cover;
+  /* Ensures image doesn't stretch */
   border-radius: 12px;
 }
 
@@ -38,6 +52,7 @@
   margin: 15px 0;
   font-size: 16px;
   color: #444;
+  text-shadow: 1px 1px 4px gray;
 }
 
 .edit-button {

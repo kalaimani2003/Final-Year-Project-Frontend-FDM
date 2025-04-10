@@ -8,7 +8,7 @@ function Logout() {
     <>
     <div className="body-wrap">
      <div className="logout-container">
-     <u>   <h1 className='H'>Log Out</h1> </u>
+        <h1 className='H'>Log Out</h1> 
         <p className='P'>Are you sure you want to log out?</p>
         <form action="/logout" method="POST">
           <Link to={'/'}>  <button type="submit" className="logout-button"> <GrLogout /> Log Out</button></Link>
