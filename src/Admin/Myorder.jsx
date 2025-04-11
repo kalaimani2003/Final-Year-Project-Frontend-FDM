@@ -36,10 +36,10 @@ function Myorder() {
           <div className="navbar-container">
             <div className="logo">DELICIOUS FOOD</div>
             <ul className="nav-links1">
-              <Link to="/userpanel"><li><a href="">Home</a></li></Link>
-              <Link to="/my"><li><a href="">My Orders</a></li></Link>
-              <Link to="/order-list"><li><a href="">View Cart</a></li></Link>
-              <Link to="/user"><li><a href="">Logout</a></li></Link>
+              <Link to="/userpanel"><li className='navigate-links'><a href="">Home</a></li></Link>
+              <Link to="/my"><li className='navigate-links'><a href="">My Orders</a></li></Link>
+              <Link to="/order-list"><li className='navigate-links'><a href="">View Cart</a></li></Link>
+              <Link to="/user"><li className='navigate-links'><a href="">Logout</a></li></Link>
             </ul>
           </div>
         </nav>
