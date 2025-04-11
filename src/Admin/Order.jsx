@@ -33,7 +33,7 @@ function Order() {
     setLoading(true);
 
     axios
-      .post('http://localhost/Fooddeliver/Fooddeliver/controllers/api/user/post/updateOrderStatus.php', 
+      .post('http://localhost/Fooddeliver/Fooddeliver/controllers/api/user/post/updateOrderStatus.php',
         { orderId, status: newStatus })
       .then(response => {
         setOrders(prevOrders =>
@@ -48,7 +48,7 @@ function Order() {
         setError("Failed to update status. Please try again.");
         setLoading(false);
       });
-  };
+  };  
 
   return (
     <div className="whole-wrap">
@@ -67,6 +67,7 @@ function Order() {
               <th>Order ID</th>
               <th>Customer</th>
               <th>Items</th>
+              <th>Items Count</th>
               <th>Total</th>
               <th>Status</th>
               <th>Completed</th> {/* New column heading */}
@@ -74,14 +75,20 @@ function Order() {
           </thead>
           <tbody>
             {orders.length > 0 ? (
-              orders.map(order => (
+              orders.map((order, i) => (                
                 <tr key={order.id}>
                   <td data-label="Order ID">{order.id}</td>
                   <td data-label="Customer">{order.username}</td>
-                  <td data-label="Items">{order.items}</td>
+                  <td data-label="Items">{(order.quantity).split(",")
+                    .map((item) => {
+                      const [name, qty] = item.split("-");                      
+                      return `${name} (${qty})`;
+                    })
+                    .join(", ")}</td>
+                  <td data-label="Items">{((order.items).split(",")).length}</td>
                   <td data-label="Total">{order.totalAmount}</td>
                   <td data-label="Status">
-                    <span className={`status ${order.status.toLowerCase()}`}>
+                    <span className={order.status.toLowerCase()}>
                       {order.status}
                     </span>
                   </td>
@@ -98,7 +105,7 @@ function Order() {
               ))
             ) : (
               <tr>
-                <td style={{color:"white"}} colSpan="6">No orders available.</td>
+                <td style={{ color: "white" }} colSpan="6">No orders available.</td>
               </tr>
             )}
           </tbody>

@@ -40,14 +40,18 @@
     font-weight: bold;
   }
   
-  .status.pending {
+  .processing {
     background-color: yellow;
     color: black;
+    padding: 4px;
+    border-radius: 20px;
   }
   
-  .status.delivered {
-    background-color: green;
+  .completed {
+    background-color: rgba(0, 128, 0, 0.83);
+    padding: 4px;
     color: white;
+    border-radius: 20px;
   }
   
   .status.in-transit {

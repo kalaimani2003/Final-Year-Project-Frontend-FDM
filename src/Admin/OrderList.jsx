@@ -59,6 +59,8 @@ function OrderList() {
     }
   };
 
+  let s_no = 1;
+
   return (
     <>
     <div className="wrap-body">
@@ -75,7 +77,7 @@ function OrderList() {
     </nav>
     </div>
     
-    <div className="whole-wrap">
+    <div className="whole-wrap orderlist-box">
       <div className="wrap">
         <h2 className="order-greeting">Hi {username}, your orders are:</h2>
 
@@ -101,6 +103,7 @@ function OrderList() {
             <table>
               <thead>
                 <tr>
+                  <th>S.NO</th>
                   <th>Order Name</th>
                   <th>Price (₹)</th>
                   <th>Quantity</th>
@@ -110,6 +113,7 @@ function OrderList() {
               <tbody>
                 {orders.map((order, index) => (
                   <tr key={index}>
+                    <td>{s_no++}.</td>
                     <td>{order.orderName}</td>
                     <td>{order.price}</td>
                     <td>{order.quantity}</td>
@@ -118,7 +122,7 @@ function OrderList() {
                 ))}
               </tbody>
             </table>
-            <h3>Total Amount: ₹ {totalAmount}</h3>
+            <h3 style={{textAlign:"center",marginTop:"10px"}}>Total Amount: ₹ {totalAmount}</h3>
             <button className="order-submit" onClick={handleOrderSubmit}>
               Submit Order
             </button>
