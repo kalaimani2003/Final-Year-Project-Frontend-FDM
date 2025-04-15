@@ -126,7 +126,7 @@ a {
 }
 
 .navigate-links:hover {
-    background-color:#f9774c;
+    background-color: #f9774c;
 }
 
 .navigate-links {
@@ -137,4 +137,10 @@ a {
     align-items: center;
     justify-content: center;
 
+}
+
+.ProcessingCancel {
+    cursor: pointer;
+    color: #fb0019;
+    /* background-color: #721c24; */
 }

@@ -29,6 +29,8 @@ function Myorder() {
     }
   };
 
+  // console.log(orders);
+
   return (
     <>
       <div className="wrap-body">
@@ -53,8 +55,10 @@ function Myorder() {
                 <th>Order ID</th>
                 <th>Date</th>
                 <th>Items</th>
+                <th>Items Count</th>
                 <th>Total</th>
                 <th>Status</th>
+                <th>Action</th>
               </tr>
             </thead>
             <tbody>
@@ -63,16 +67,22 @@ function Myorder() {
                   <tr key={index}>
                     <td data-label="Order ID">{order.id}</td>
                     <td data-label="Date">{order.date}</td>
-                    <td data-label="Items">{order.orderNames}</td>
+                    <td data-label="Items">{(order.orderQuantities).split(",")
+                      .map((item) => {
+                        const [name, qty] = item.split("-");
+                        return `${name} (${qty})`;
+                      })
+                      .join(", ")}</td>
+                    <td data-label="Items">{((order.orderNames).split(",")).length}</td>
                     <td data-label="Total">₹{order.totalAmount}</td>
                     <td data-label="Status">
                       <span
-                        className={`status status-${order.status.toLowerCase()
-                          }`}
+                        className={order.status.toLowerCase()}
                       >
-                        {order.status}
+                        {(order.status == "Completed")?"✅ Delivered":"🕒 Processing"}
                       </span>
                     </td>
+                    <td className={order.status+"Cancel"}>{(order.status=="Completed")?"- - -":"❌ Cancel Order"} </td>
                   </tr>
                 ))
               ) : (
