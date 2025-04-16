@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./dashboard.css";
 import Drawer from "./Drawer";
+import CircularIndeterminate from "./Progress/Progress";
 
 function Dashboard() {
   const [userCount, setUserCount] = useState(0);
@@ -46,9 +47,9 @@ function Dashboard() {
         <div className="container">
           <section className="summary-cards">
             {loading ? (
-              <div>Loading...</div>  // Show loading text while data is being fetched
+              <div className="progress-com"><CircularIndeterminate/></div>  // Show loading text while data is being fetched
             ) : error ? (
-              <div>{error}</div>  // Show error message if something goes wrong
+              <div className="progress-com">{error}</div>  // Show error message if something goes wrong
             ) : (
               <>
                 <div className="card">

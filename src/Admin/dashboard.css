@@ -68,6 +68,17 @@
     overflow-x: auto;
 }
 
+.progress-com{
+    /* border: 2px solid white; */
+    height: 90vh;
+    color: #ffffff;
+    font-size: xx-large;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     .db-main {
@@ -84,3 +95,4 @@
         width: 80%; /* Make cards smaller on smaller screens */
     }
 }
+

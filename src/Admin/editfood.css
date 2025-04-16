@@ -7,7 +7,6 @@
   /* border: 3px solid white; */
   /* Adjust width as per your requirement */
   padding: 20px;
-
 }
 
 .card-container {
@@ -61,20 +60,26 @@
   cursor: pointer;
   transition: all 0.3s ease;
   background-color: rgb(255, 101, 6);
-
   color: white;
   border-radius: 5px;
   display: inline-flex;
   align-items: center;
+  height: 40px;
 }
 
 .edit-button:hover {
   background-color: white;
   border: 1px solid rgb(255, 101, 6);
   color: rgb(255, 101, 6);
-
 }
 
 .edit-button svg {
   margin-left: 5px;
+}
+
+.link-box{
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }

@@ -3,6 +3,7 @@ import axios from 'axios';
 import { FaEdit } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import './editfood.css';
+import DeleteIcon from '@mui/icons-material/Delete';
 
 function Editfood() {
   const [foodItems, setFoodItems] = useState([]);
@@ -36,11 +37,18 @@ function Editfood() {
                 }}
               />
               <p>{food.Description}</p>
-              <Link to={`/edit/${food.id}`}>
-                <button className="edit-button">
-                  Edit <FaEdit />
-                </button>
-              </Link>
+              <div className="link-box">
+                <Link to={`/edit/${food.id}`}>
+                  <button className="edit-button">
+                    Edit <FaEdit />
+                  </button>
+                </Link>
+                <Link>
+                  <button className="edit-button">
+                   Delete <DeleteIcon />
+                  </button>
+                </Link>
+              </div>
             </div>
           ))
         ) : (
