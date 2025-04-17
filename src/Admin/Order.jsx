@@ -50,6 +50,9 @@ function Order() {
       });
   };  
 
+  console.log(orders);
+  
+
   return (
     <div className="whole-wrap">
       <div className="wrap">
@@ -65,6 +68,7 @@ function Order() {
           <thead>
             <tr>
               <th>Order ID</th>
+              <th>Date</th>
               <th>Customer</th>
               <th>Items</th>
               <th>Items Count</th>
@@ -75,9 +79,10 @@ function Order() {
           </thead>
           <tbody>
             {orders.length > 0 ? (
-              orders.map((order, i) => (                
+              orders.map((order) => (                                
                 <tr key={order.id}>
                   <td data-label="Order ID">{order.id}</td>
+                  <td>{order.date}</td>
                   <td data-label="Customer">{order.username}</td>
                   <td data-label="Items">{(order.quantity).split(",")
                     .map((item) => {
@@ -89,7 +94,7 @@ function Order() {
                   <td data-label="Total">{order.totalAmount}</td>
                   <td data-label="Status">
                     <span className={order.status.toLowerCase()}>
-                      {order.status}
+                      {order.status} {(order.status=="Completed")?"✅":"🕒"} 
                     </span>
                   </td>
                   <td data-label="Completed">
